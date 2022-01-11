@@ -1,24 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <nav>
-        <ul>
+        <div id="menuknap">☰</div>
+        <ul id="menu" class="hidden">
           <li><a href="index.html">Forside</a></li>
-          <li><a href="tema.html#tema2">Tema 2 </a></li>
+          <li><a href="tema2.html">Tema 2 </a></li>
           <li><a href="tema3.html">Tema 3 </a></li>
           <li><a href="tema4.html">Tema 4 </a></li>
           <li><a href="tema5.html">Tema 5 </a></li>
+          <li><a href="tema6.html">Tema 6 </a></li>
           <li><a href="ommig.html">Om mig</a></li>
         </ul>
+        <h1><a href="index.html">Robin Lau</a></h1>
       </nav>
     </header>
+
+    <section id="ommig">
+      <img src="billeder/cvbillede.jpg" alt="" />
+      <div class="ommig_tekst">
+        <h1>CV</h1>
+        <p class="cvp">
+          Jeg hedder Robin, er 22 år gammel, og bor i Valby. Til dagligt læser
+          jeg multimediedesign på første semester på KEA. Ved siden af studiet,
+          arbejder jeg hos Unisport i print/tryk afdelingen, hvor jeg blandt
+          andet beskæftiger mig med print af fodboldtrøjer, samt print af
+          holdsæt til klubber rundt om i Danmark.
+        </p>
+        <div class="cv1">
+          <h3>2021-Nu: Multimediedesign</h3>
+          <p>Læser Multimediedesign på KEA</p>
+        </div>
+        <div class="cv2">
+          <h3>2020-2021: Grafisk arbejde</h3>
+          <p>
+            I mit sabbatår fik jeg muligheden for at lave lidt freelance arbejde
+            for små/upcoming musik artister hos Universal Music. Musik artister
+            som blandt andet Albert Heath, Bathsheba, Oh Livvy og Feels. Der
+            skulle blandt andet laves artwork, samt grafisk indhold til deres
+            sociale medier.
+          </p>
+        </div>
+        <div class="cv3">
+          <h3>2019-Nu: Arbejde hos Unisport</h3>
+          <p>
+            I mit sabbatår arbejdede jeg i Unisports tryk/print afdeling, hvor
+            jeg arbejdede i knap 2 år, indtil jeg gik på deltid da jeg skulle
+            starte på KEA i sommeren 2021
+          </p>
+        </div>
+        <div class="cv4">
+          <h3>2016-2019: Niels Brock HHX</h3>
+          <p>Innovation og startup på Niels Brock innovationsgymnasium</p>
+        </div>
+      </div>
+    </section>
+    <script src="burgermenu.js"></script>
   </body>
 </html>

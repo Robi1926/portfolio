@@ -1,3 +1,5 @@
+/*indstillinger generelt*/
+
 img {
   max-width: 100%;
   max-height: 100%;
@@ -6,91 +8,525 @@ img {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+video {
+  max-width: 100%;
+  max-height: 100%;
+}
+iframe {
+  width: 560px;
+  height: 315px;
+  border: none;
+  max-width: 100%;
+}
+
+/*nav/menu*/
+
+.hidden {
+  opacity: 0;
+  transform: translateX(-135%);
+}
+
+#menuknap {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+#menu {
+  list-style-type: none;
+  transition: transform 0.3s;
+  transform-origin: top left;
+}
+
+@media (min-width: 600px) {
+  #menuknap {
+    display: none;
+  }
+  #menu.hidden {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  header nav ul {
+    gap: 20px;
+    float: right;
+    display: flex;
+  }
 }
 
 header nav ul {
-  display: flex;
-  gap: 30px;
-  list-style-type: none;
+  gap: 10px;
 }
 header {
-  position: sticky;
-  background-color: blue;
-  padding: 20px;
+  padding: 30px;
   top: 0;
+  position: sticky;
+  background-color: white;
 }
 
-#tema2 {
-  background-color: blue;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
 }
+/*mobile-first*/
+/*forside*/
+
+#forside {
+  max-width: 100%;
+}
+
+.boks1 {
+  border: 1px black solid;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.boks1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.boks1:hover {
+  opacity: 0.2;
+}
+
+.boks2 {
+  border: 1px black solid;
+
+  font-size: 3rem;
+}
+
+.boks2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.boks2:hover {
+  opacity: 0.2;
+}
+
+/*tema2*/
+
+#tema2 {
+  background-color: white;
+  padding: 30px;
+}
+
+#tema2 h1 {
+  font-size: 3rem;
+}
+
+.button {
+  border: none;
+  padding: 15px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+}
+#tema2 a {
+  color: white;
+}
+#tema3 a {
+  color: white;
+}
+
+#tema4 a {
+  color: white;
+}
+
+.spilskaerm {
+  padding-top: 100px;
+}
+
+#tema2 h3 {
+  padding-top: 100px;
+}
+
+.paragraf {
+  padding-top: 20px;
+}
+
+.paragraf2 {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+/*tema3*/
 
 #tema3 {
   color: blue;
+  padding: 30px;
 }
 
+#tema3 p {
+  color: #0f0f0f;
+}
+
+#tema3 h3 {
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+
+#tema3 h1 {
+  font-size: 3rem;
+}
+
+/*tema4*/
+
 #tema4 {
-  background-color: blue;
+  background-color: white;
+  padding: 30px;
+}
+
+#tema4 h3 {
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+
+#tema4 h1 {
+  font-size: 3rem;
+}
+
+/*tema5*/
+
+#tema5 {
+  padding: 30px;
+}
+
+#tema5 h3 {
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+#tema5 h1 {
+  font-size: 3rem;
+}
+#tema6 {
+  padding: 30px;
+}
+
+#tema6 h3 {
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+#tema6 h1 {
+  font-size: 3rem;
+}
+
+#ommig {
+  padding: 30px;
+}
+#ommig h1 {
+  padding-top: 60px;
 }
 
 a {
-  color: white;
+  color: blue;
   list-style: none;
   text-decoration: none;
   font-family: "lato", sans-serif;
 }
 
 h1 {
-  color: white;
+  color: blue;
   font-family: "lato";
 }
 
 h3 {
-  color: white;
+  color: black;
   font-family: "lato", sans-serif;
 }
 
 p {
-  color: white;
+  color: black;
+  font-family: "lato";
+  line-height: 30px;
+}
+q {
+  color: black;
   font-family: "lato";
 }
 
-#tema3 h1,
-#tema3 h3,
-#tema3 p {
-  color: blue;
-}
-
-#tema5 h1,
-#tema5 h3,
-#tema5 p {
-  color: blue;
-}
-
 a:hover {
-  color: grey;
+  color: #121212;
+}
+.billede1 {
+  border: 1px black solid;
+}
+.billede2 {
+  border: 1px black solid;
+}
+.billede3 {
+  border: 1px black solid;
+}
+.billede4 {
+  border: 1px black solid;
+}
+.billede5 {
+  border: 1px black solid;
+}
+.billede6 {
+  border: 1px black solid;
 }
 
-#forside {
-  max-width: 100%;
-  height: 92vh;
-  background-image: url(splash.jpg);
-  background-size: cover;
-  background-position: 40%;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+.billede1 img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+  object-fit: cover;
 }
 
-.tekst {
-  position: absolute;
-  left: 5%;
-  top: 70%;
-  font-size: 3rem;
+.billede1:hover img {
+  transform: scale(1.1);
+  opacity: 0.2;
 }
 
-.pil {
-  position: absolute;
-  left: 85%;
-  top: 80%;
+.billede2 img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+  object-fit: cover;
+}
+
+.billede2:hover img {
+  width: 100%;
+  transform: scale(1.1);
+  opacity: 0.2;
+}
+.billede3 img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+  object-fit: cover;
+}
+
+.billede3:hover img {
+  transform: scale(1.1);
+  opacity: 0.2;
+}
+
+.billede4 img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+  object-fit: cover;
+}
+
+.billede4:hover img {
+  transform: scale(1.1);
+  opacity: 0.2;
+}
+.billede5 img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+  object-fit: cover;
+}
+
+.billede5:hover img {
+  transform: scale(1.1);
+  opacity: 0.2;
+}
+.billede6 img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+  object-fit: cover;
+}
+
+.billede6:hover img {
+  transform: scale(1.1);
+  opacity: 0.2;
+}
+#ommig h1 {
+  text-align: center;
+}
+.cv1,
+.cv2,
+.cv3,
+.cv4,
+.cvp {
+  padding: 30px;
+}
+
+/*media for desktop */
+
+@media (min-width: 800px) {
+  #forside_boks {
+    display: flex;
+    flex-direction: row;
+  }
+  #temaer_boks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 100%;
+  }
+  .billede1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .billede2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .billede3 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .billede4 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .billede5 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .billede6 {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  #tema2 {
+    gap: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 20px;
+  }
+  #tema2_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+  .tekst2 {
+    grid-column: 1;
+  }
+  .figur2 {
+    grid-column: 2;
+  }
+  #tema2 h1 {
+    font-size: 10rem;
+  }
+
+  #tema3 {
+    gap: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 20px;
+  }
+  #tema3_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+  .tekst3 {
+    grid-column: 1;
+  }
+
+  .figur3 {
+    grid-column: 2;
+  }
+  #tema3 h1 {
+    font-size: 10rem;
+  }
+  #tema4 {
+    gap: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 20px;
+  }
+  #tema4_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+  .tekst4 {
+    grid-column: 1;
+  }
+
+  .figur4 {
+    grid-column: 2;
+    padding-left: 150px;
+  }
+  #tema4 h1 {
+    font-size: 10rem;
+  }
+  #tema5 {
+    gap: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  #tema5_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    gap: 50px;
+  }
+  .tekst5 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .figur5 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .tekst_5 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .figur_5 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #tema5 h1 {
+    font-size: 10rem;
+  }
+
+  #foto5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  #tema6 {
+    gap: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 20px;
+  }
+
+  #tema6_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tekst6 {
+    grid-column: 1;
+  }
+  .figur6 {
+    grid-column: 2;
+  }
+  #wireframe {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .w1 {
+    grid-column: 1;
+  }
+
+  .w2 {
+    grid-column: 2;
+  }
+
+  .w3 {
+    grid-column: 3;
+  }
+  #tema6 h1 {
+    font-size: 10rem;
+  }
+  #ommig {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
 }

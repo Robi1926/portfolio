@@ -1,33 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfoliosite</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <nav>
-        <ul>
+        <div id="menuknap">☰</div>
+        <ul id="menu" class="hidden">
           <li><a href="index.html">Forside</a></li>
           <li><a href="tema.html">Temaer</a></li>
           <li><a href="ommig.html">Om mig</a></li>
         </ul>
+        <h1><a href="index.html">Robin Lau</a></h1>
       </nav>
     </header>
+
     <section id="forside">
-      <div class="tekst">
-        <h1 class="overskrift">Robin Lau</h1>
-        <h3 class="undertekst">Multimediedesign, KEA</h3>
-      </div>
-      <div class="pil">
-        <div class="piltekst"><h3>Temaer</h3></div>
-        <div>
-          <a href="tema.html"><img src="hvidpil.svg" alt="pil" > 
+      <div id="forside_boks">
+        <div class="boks1">
+          <a href="tema.html"
+            ><img src="billeder/portfoliobillede.jpg" alt=""
+          /></a>
+        </div>
+        <div class="boks2">
+          <a href="ommig.html"><img src="billeder/cv_billede.jpg" alt="" /></a>
         </div>
       </div>
     </section>
+
+    <script src="burgermenu.js"></script>
   </body>
 </html>

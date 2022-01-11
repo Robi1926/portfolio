@@ -1,54 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temaer</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <nav>
-        <ul>
+        <div id="menuknap">☰</div>
+        <ul id="menu" class="hidden">
           <li><a href="index.html">Forside</a></li>
-          <li><a href="tema.html#tema2">Tema 2 </a></li>
+          <li><a href="tema2.html">Tema 2 </a></li>
           <li><a href="tema3.html">Tema 3 </a></li>
           <li><a href="tema4.html">Tema 4 </a></li>
           <li><a href="tema5.html">Tema 5 </a></li>
+          <li><a href="tema6.html">Tema 6 </a></li>
           <li><a href="ommig.html">Om mig</a></li>
         </ul>
+        <h1><a href="index.html">Robin Lau</a></h1>
       </nav>
     </header>
 
-    <section id="tema2">
-      <div class="tekst2">
-        <h1>Tema 2</h1>
-        <h3>Temabeskrivelse</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est nam
-          architecto consequatur suscipit voluptatem, aut delectus porro
-          quisquam itaque tempora hic 
+    <section id="tema">
+      <div id="temaer_boks">
+        <div class="billede1">
+          <a href="tema2.html">
+            <img src="billeder/tema2.jpg" alt="" />
+          </a>
+        </div>
+        <div class="billede2">
+          <a href="tema3.html"><img src="billeder/tema3.jpg" alt="tema3" /></a>
+        </div>
+        <div class="billede3">
+          <a href="tema4.html"><img src="billeder/tema4.jpg" alt="tema4" /></a>
+        </div>
+        <div class="billede4">
+          <a href="tema5.html"><img src="billeder/tema5.jpg" alt="tema5" /></a>
+        </div>
+        <div class="billede5">
+          <a href="tema6.html"><img src="billeder/tema6.jpg" alt="tema6" /></a>
+        </div>
+        <div class="billede6">
+          <a href="ommig.html"><img src="billeder/ommig.jpg" alt="ommig" /></a>
+        </div>
       </div>
     </section>
-
-    <section id="tema3">
-      <div class="tekst3">
-        <h1>Tema 3</h1>
-        <h3>Temabeskrivelse</h3>
-      </div>
-    </section>
-    <section id="tema4">
-      <div class="tekst4">
-        <h1>Tema 4</h1>
-        <h3>Temabeskrivelse</h3>
-      </div>
-    </section>
-    <section id="tema5">
-      <div class="tekst5">
-        <h1>Tema 5</h1>
-        <h3>Temabeskrivelse</h3>
-      </div>
-    </section>
+    <script src="burgermenu.js"></script>
   </body>
 </html>
